@@ -1,7 +1,7 @@
 # FutureTale-Hotel-Booking-Cancellation
 
 
-![](hotel1.jgp)
+![](hotel1.jpg)
 
 
 ## Table of Contents
