@@ -1,12 +1,15 @@
 # FutureTale-Hotel-Booking-Cancellation
 
 
-![](hotel1.jpg)
+![](hotel2.jpg)
 
 
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Problem Statement](#problem-statement)
+
+  ![](hotel1.jpg)
+- 
 - [Project Objective](#project-objective)
 - [Data Sources](#data-sources)
 - [Data processing](#data-processing)
