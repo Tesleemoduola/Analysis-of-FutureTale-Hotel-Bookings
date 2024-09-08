@@ -1,10 +1,7 @@
 # FutureTale-Hotel-Booking-Cancellation
 
 
-
-# FutureTale Hotel Booking Cancellation Rate
-
-![](image_R.webp)
+![](hotel1.jgp)
 
 
 ## Table of Contents
