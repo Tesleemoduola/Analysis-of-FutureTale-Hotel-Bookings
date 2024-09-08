@@ -7,16 +7,12 @@
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Problem Statement](#problem-statement)
-
-  ![](hotel1.jpg)
-- 
 - [Project Objective](#project-objective)
 - [Data Sources](#data-sources)
 - [Data processing](#data-processing)
 - [Data Visualization](#Data-Visualization)
 - [Key Insights](#key-insights)
 - [Conclusion](#conclusion)
-
 
 ## Project Overview
 The FutureTale Hotel Reservation project using Excel aims to understand, address and mitigate the challenges posed by a significant increase in hotel reservation cancellation. 
@@ -25,6 +21,8 @@ By leveraging my skill in excel, the data unveiled, the hotel experienced a conc
 shift in reservation dynamics.
 
 ## Problem Statement
+
+![](hotel1.jpg)
 - High number of cancellations and no-shows as a result of Current cancellation policy that allows free or low-cost cancellations.
 - This policy benefits guests but negatively impacts the hotel’s revenue.
 
