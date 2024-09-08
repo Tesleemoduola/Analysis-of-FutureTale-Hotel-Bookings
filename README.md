@@ -9,16 +9,15 @@
 - [Problem Statement](#problem-statement)
 - [Project Objective](#project-objective)
 - [Data Sources](#data-sources)
-- [Data processing](#data-processing)
+- [Data Handling](#data-handling)
 - [Data Visualization](#Data-Visualization)
 - [Key Insights](#key-insights)
 - [Conclusion](#conclusion)
 
 ## Project Overview
-The FutureTale Hotel Reservation project using Excel aims to understand, address and mitigate the challenges posed by a significant increase in hotel reservation cancellation. 
-By leveraging my skill in excel, the data unveiled, the hotel experienced a concerning trend - a 22% increase in cancellation rates during the period of July 2017 and October 
-2018, casting a shadow over its once-stable reservation landscape. Not only this was unraveled but also understand the underlying factors that contributed to this significant 
-shift in reservation dynamics.
+This project analyzes FutureTale Hotel bookings using Excel to address the rising issue of reservation cancellations. The data revealed a 22% increase in 
+cancellations between July 2017 and October 2018, highlighting a significant shift in booking patterns. By leveraging Excel, key factors contributing to this 
+trend were identified, offering insights to mitigate future cancellations and improve reservation stability.
 
 ## Problem Statement
 
@@ -27,49 +26,56 @@ shift in reservation dynamics.
 - This policy benefits guests but negatively impacts the hotel’s revenue.
 
 ## Project Objective
-The primary objective of this project is to provide insights, conduct a comprehensive analysis of hotel reservation data with the aim of understanding and addressing specific 
-challenges related to increased cancellation rates
+The main objective of this project is to conduct a detailed analysis of hotel reservation data to uncover insights and address the challenges associated 
+with rising cancellation rates.
 
 ## Data Sources
-The dataset used in this project was provided by 10Alytics. The dataset contains Booking Id, no of adults, no of children, no of weekend nights, no of week nights, type of meal 
-plan, required car parking space, room type reserved, lead time, arrival year, arrival month, month, arrival date, date, market segment type, repeated guest, no of previous cancelation, 
-no of previous booking, booking status, avg price per room
+The dataset used in this project was provided by 10Alytics. The key features are Booking ID, number of adults and children, number of weekend and weeknights, 
+meal plan type, car parking requirements, reserved room type, lead time, arrival year and month, market segment, repeated guest status, previous cancellations and bookings, 
+booking status, and average price per room.
 
-## Data processing
-In the process of handling the data, I engaged in compilation and cleansing activities. I systematically examined the dataset to identify and eliminate any duplicate entries. Additionally, 
-I enhanced the dataset by introducing a new column labelled "sum of is_cancelled." Through the utilization of the "IF" function, I assigned the value "1" to indicate cancelled bookings 
-and "0" for those that were not cancelled. Furthermore, I employed the VLOOKUP function to extract the corresponding arrival month names. This involved creating a table with an array containing 
-month numbers paired with their respective names. By referencing this table, I successfully obtained the accurate arrival month names for the reservations at the FutureTale Hotel.
+## Data Handling
+Data compilation and cleansing were performed, with duplicate entries identified and removed. A new column, "sum of is_cancelled," was introduced using the 
+"IF" function to assign a value of "1" for cancelled bookings and "0" for non-cancelled ones. The VLOOKUP function was applied to derive accurate arrival month names by referencing 
+the table containing month numbers and paired them with their corresponding names, ensuring accurate reservation details for FutureTale Hotel.
 
-## Data Visualization
+## EDA/Data Visualization
 
-![](Dashboard_png.png)
+![](image_d.png)
 
-After I did data cleaning, I utilise Excel's functionalities for exploratory data analysis to uncover patterns, trends, and anomalies in the reservation data. Visualized data distributions and 
-relationships between variables using charts, graphs, and pivot tables. Calculated cancellation rates for different periods, market segments, meal plans, and room types using Excel formulas. I also 
-Conduct detailed analyses of market segments, meal plans, and room types to understand their individual impact on cancellations. Used Excel to perform segmentation analysis and generate insights into 
-the characteristics of high-cancellation segments. Also, Analysedd booking trends over time, especially between July 2017 and October 2018. Then, create time series charts to visualize the progression
-of bookings, cancellations, and redemption rates. Develop strategic recommendations based on Excel-generated insights to address the identified challenges.
+Following data cleaning, Excel functionalities were utilized for exploratory data analysis to uncover patterns, trends, and anomalies in the reservation data. Data distributions and 
+relationships between variables were visualized using charts, graphs, and pivot tables. Cancellation rates were calculated for various periods, market segments, meal plans, and room 
+types using Excel formulas. Detailed analyses of market segments, meal plans, and room types were conducted to assess their impact on cancellations. Segmentation analysis was performed 
+to generate insights into high-cancellation segments. Booking trends between July 2017 and October 2018 were analyzed, with time series charts created to visualize the progression of bookings, 
+cancellations, and redemption rates. Strategic recommendations were developed based on insights generated through Excel to address the identified challenges.
 
-## key Metrics
+## Key Metrics/Insights
 ### Overall Booking and Cancellation Analysis
-- The analysis reveals that out of a total of 36,275 bookings, 33% were canceled, indicating a very high proportion of reservations being cancelled. On the other hand, 67% of the bookings were successfully redeemed.
+- The analysis showed a total of 36,275 bookings made with 33% cancellatiion, highlighting a high rate of reservation cancellations. On the other hand, 67% of the bookings were successfully redeemed.
+
 ### Cancelation trend for the period in view
-![](image_2.png)
-- In the year 2017, the hotel recorded a total of 6,514 bookings, demonstrating a cancelation rate of 15% and a redemption rate of 85%. As we move to the year 2018, the total bookings increased to 29,761 but the
-- cancellation rate also saw a rise to 37% resulting in redemption rate of 63%. 
-- From 2017 to 2018. this analysis unraveled an additional 22% increase in booking cancellations with a corresponding decline in the redeemed bookings of clients at future Tale
+![](trend.png)
+- In 2017, the hotel recorded a total of 6,514 bookings, with 15% (approximately 977 bookings) cancelled and 85% (approximately 5,537 bookings) redeemed. In 2018, the total bookings
+  increased to 29,761, with 37% (approximately 11,026 bookings) cancelled and 63% (approximately 18,735 bookings) redeemed.
+- This analysis from 2017 to 2018 revealed an absolute increase of 10,049 cancelled bookings (from 977 in 2017 to 11,026 in 2018) and a corresponding decline in redeemed bookings
+  by 13,198 (from 5,537 in 2017 to 18,735 in 2018) at FutureTale Hotel.
+
 ### Meal Plan and Room type Impacts
-- % Cancelation Rate across the meal plan type, with meal plan 1 having the most bookings for both years while meal 2 experienced the highest cancelation rate
-- % Cancelation Rate across Room types reserved with room type 1 having most bookings for both years. And a 20% increase in cancelation from previous year
+- Cancellation Rate by Meal Plan Type: Meal Plan 1 had the highest number of bookings for both years, while Meal Plan 2 experienced the highest cancellation rate.
+- Cancellation Rate by Room Type: Room Type 1 had the most bookings for both years. However, there was a 20% increase in the cancellation rate for Room Type 1 compared to the previous year.
 
 ## Conclusion
-The FutureTale Hotel reservation analysis showcase the synergy between data and strategy, creating a narrative of resilience, adaptability, and success in the ever-evolving world of hospitality
+The examination of FutureTale Hotel booking data reveals critical insights into booking and cancellation trends. The significant rise in cancellation rates between 2017 and 2018 underscores the need 
+for targeted strategies to enhance booking stability. By addressing key factors such as meal plans and room types that contribute to cancellations, FutureTale Hotel can implement data-driven improvements 
+to optimize guest satisfaction and operational efficiency.
 
 ## Recommendation
-- Package Deals: Develop enticing package deals that include meal plans, aiming to increase the overall value proposition for guests. Consider offering flexible meal plan options to cater to different guest preferences.
-- Promotional Campaigns: Launch targeted promotional campaigns highlighting the benefits of booking packages with meal plans, emphasizing the added value and convenience for guests.
-- Review Room Type Policies: Evaluate the cancellation policies for room types with increased cancellation rates. If possible, adjust policies to make them more guest-friendly while ensuring operational feasibility.
-- Dynamic Pricing: Implement dynamic pricing strategies to adjust room rates based on demand, seasonality, and booking trends. Offering competitive rates during periods with historically lower cancellations may encourage more reservations.
-- Diversification: Explore opportunities to diversify the guest base by tapping into segments with historically lower cancellation rates. Consider partnerships or collaborations to attract a more stable clients. Tailor marketing and promotional
-- strategies to target high-cancellation segments with personalized offers, loyalty programs, or exclusive deals.
+- Package Deals: Create attractive package deals that include meal plans to enhance the overall value for guests. Offer a range of flexible meal plan options to meet diverse preferences.
+- Promotional Campaigns: Initiate targeted promotional campaigns that emphasize the benefits of booking package deals with meal plans. Highlight the added value and convenience to entice more bookings.
+- Review Room Type Policies: Reassess the cancellation policies for room types with higher cancellation rates. Adjust these policies to be more accommodating for guests, while maintaining operational viability.
+- Dynamic Pricing: Adopt dynamic pricing strategies to adjust room rates based on factors such as demand, seasonality, and booking trends. Offering competitive rates during periods of historically lower cancellations 
+  could boost reservations.
+- Diversification: Seek opportunities to diversify the guest base by targeting segments with historically lower cancellation rates. Explore partnerships and collaborations to attract more stable clients.
+  Tailored marketing and promotional strategies to address high-cancellation segments with personalized offers, loyalty programs, or exclusive deals.
+
+
