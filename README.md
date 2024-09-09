@@ -13,6 +13,7 @@
 - [Data Visualization](#Data-Visualization)
 - [Key Insights](#key-insights)
 - [Conclusion](#conclusion)
+- [Recommendations](#recommendations)
 
 ## Project Overview
 This project analyzes FutureTale Hotel bookings using Excel to address the rising issue of reservation cancellations. The data revealed a 22% increase in 
